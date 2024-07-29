@@ -10,7 +10,7 @@ import com.wera.wera.entities.User;
 import com.wera.wera.request.LoginRequest;
 import com.wera.wera.response.AuthResponse;
 import com.wera.wera.service.AuthService;
-import com.wera.wera.service.CustomUserDetailsImp;
+
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;

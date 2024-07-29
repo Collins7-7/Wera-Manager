@@ -28,7 +28,7 @@ public class AuthServieImp implements AuthService{
 
 
 @Override
-public User createUser(User user) throws Exception{
+public AuthResponse createUser(User user) throws Exception{
     
     User userExists = userRepository.findByEmail(user.getEmail());
 
@@ -50,7 +50,9 @@ public User createUser(User user) throws Exception{
     AuthResponse response = new AuthResponse();
     response.setMessage("Singup Successful");
     response.setJwt(jwt);
-    return userRepository.save(newUser);
+    userRepository.save(newUser);
+
+    return response;
 }
 
 
