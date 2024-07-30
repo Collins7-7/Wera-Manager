@@ -18,7 +18,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @Service
-public class AuthServieImp implements AuthService{
+public class AuthServiceImp implements AuthService{
  
     private UserRepository userRepository;
 
