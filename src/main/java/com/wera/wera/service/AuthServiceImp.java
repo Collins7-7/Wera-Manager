@@ -26,6 +26,8 @@ public class AuthServiceImp implements AuthService{
 
     private CustomUserDetailsImp customUserDetailsImp;
 
+    private SubscriptionService subscriptionService;
+
 
 @Override
 public AuthResponse createUser(User user) throws Exception{
@@ -40,6 +42,10 @@ public AuthResponse createUser(User user) throws Exception{
     newUser.setEmail(user.getEmail());
     newUser.setFullName(user.getFullName());
     newUser.setPassword(passwordEncoder.encode(user.getPassword()));
+
+    User savedUser = userRepository.save(newUser);
+
+    subscriptionService.createSubscription(savedUser);
 
     Authentication authentication = new UsernamePasswordAuthenticationToken(user.getEmail(), user.getPassword());
 
