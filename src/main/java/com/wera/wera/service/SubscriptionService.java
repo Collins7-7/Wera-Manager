@@ -6,7 +6,7 @@ import com.wera.wera.entities.User;
 
 public interface SubscriptionService {
     
-    Subscription createSubscription(User user);
+    Subscription createSubscription(User user) throws Exception;
 
     Subscription getUsersSubscription(Long userId) throws Exception;
 

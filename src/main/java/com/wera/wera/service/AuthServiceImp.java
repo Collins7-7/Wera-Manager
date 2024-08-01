@@ -39,10 +39,12 @@ public AuthResponse createUser(User user) throws Exception{
     }
 
     User newUser = new User();
+    
+    newUser.setPassword(passwordEncoder.encode(user.getPassword()));
     newUser.setEmail(user.getEmail());
     newUser.setFullName(user.getFullName());
-    newUser.setPassword(passwordEncoder.encode(user.getPassword()));
 
+    userRepository.save(newUser);
     User savedUser = userRepository.save(newUser);
 
     subscriptionService.createSubscription(savedUser);
@@ -57,6 +59,7 @@ public AuthResponse createUser(User user) throws Exception{
     response.setMessage("Singup Successful");
     response.setJwt(jwt);
     userRepository.save(newUser);
+    
 
     return response;
 }

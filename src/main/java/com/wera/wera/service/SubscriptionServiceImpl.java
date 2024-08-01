@@ -19,7 +19,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     private SubscriptionRepository subscriptionRepository;
 
     @Override
-    public Subscription createSubscription(User user) {
+    public Subscription createSubscription(User user) throws Exception {
         Subscription subscription = new Subscription();
         
         subscription.setUser(user);
@@ -27,6 +27,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
         subscription.setGetSubscriptionEndDate(LocalDate.now().plusMonths(12));
         subscription.setValid(true);
         subscription.setPlanType(PlanType.FREE);
+
        return subscriptionRepository.save(subscription);
     }
 

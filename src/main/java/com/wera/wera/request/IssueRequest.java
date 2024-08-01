@@ -2,9 +2,13 @@ package com.wera.wera.request;
 
 import java.time.LocalDate;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class IssueRequest {
     
      private String title;
@@ -13,7 +17,7 @@ public class IssueRequest {
 
     private String status;
 
-    private Long projectID;
+    private Long projectId;
 
     private String priority;
 
