@@ -18,7 +18,7 @@ private JavaMailSender javaMailSender;
     @Override
     public void sendEmailWithToken(String userEmail, String link)throws MessagingException {
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, "utf-8");
+        MimeMessageHelper helper = new MimeMessageHelper(mimeMessage,"UTF-8");
 
         String subject = "Join Project Team Invitation";
 
@@ -31,7 +31,7 @@ private JavaMailSender javaMailSender;
         try {
             javaMailSender.send(mimeMessage);
             
-        } catch (Exception e) {
+        } catch (MailSendException e) {
             throw new MailSendException("Failed to send email");
         }
         

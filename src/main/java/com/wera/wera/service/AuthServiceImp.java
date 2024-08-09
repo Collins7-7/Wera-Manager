@@ -45,9 +45,9 @@ public AuthResponse createUser(User user) throws Exception{
     newUser.setFullName(user.getFullName());
 
     userRepository.save(newUser);
-    User savedUser = userRepository.save(newUser);
+    // User savedUser = userRepository.save(newUser);
 
-    subscriptionService.createSubscription(savedUser);
+    // subscriptionService.createSubscription(savedUser);
 
     Authentication authentication = new UsernamePasswordAuthenticationToken(user.getEmail(), user.getPassword());
 
