@@ -26,7 +26,7 @@ public class AuthServiceImp implements AuthService{
 
     private CustomUserDetailsImp customUserDetailsImp;
 
-    private SubscriptionService subscriptionService;
+    // private SubscriptionService subscriptionService;
 
 
 @Override
