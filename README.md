@@ -1,5 +1,12 @@
 # Wera-Manager
 
+![Java](https://img.shields.io/badge/Java-11+-blue.svg)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5-green.svg)
+![React](https://img.shields.io/badge/React-18.2.0-blue.svg)
+![MySQL](https://img.shields.io/badge/Database-MySQL-yellow.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
+
 Wera-Manager is a project management web application designed specifically for software development teams. The platform facilitates seamless collaboration between team members by allowing users to create projects, assign tasks, update task statuses, and communicate in real-time. Built with a robust Java Spring Boot back-end, a responsive React front-end, and MySQL database, Wera-Manager empowers software development teams to streamline project workflows and maximize productivity.
 
 ## Table of Contents
