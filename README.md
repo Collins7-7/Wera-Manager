@@ -98,4 +98,4 @@ Submit a pull request for review.
 For major changes, please open an issue to discuss your ideas first.
 
 **License**
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](#https://choosealicense.com/licenses/mit/) file for details.
