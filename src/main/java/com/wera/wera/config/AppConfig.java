@@ -43,7 +43,8 @@ public class AppConfig {
                     "http://localhost:3000",
                     "http://localhost:5173",
                     "http://localhost:4200",
-                    "https://wera-flame.vercel.app"
+                    "https://wera-flame.vercel.app",
+                    "http://wera-manager.s3-website-us-east-1.amazonaws.com/"
                     
                 ));
 

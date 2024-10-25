@@ -31,6 +31,8 @@ public class InvitationServiceImpl implements InvitationService{
 
         invitationRepository.save(invitation);
 
+        // String invitationLink = "http://wera-manager.s3-website-us-east-1.amazonaws.com/accept_invitation?token="+invitationToken;
+        // emailService.sendEmailWithToken(email, invitationLink);
         String invitationLink = "http://localhost:5173/accept_invitation?token="+invitationToken;
         emailService.sendEmailWithToken(email, invitationLink);
         
