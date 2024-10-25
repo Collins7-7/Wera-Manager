@@ -104,7 +104,7 @@ Open a browser and go to http://localhost:3000.
 **Contributing**
 We welcome contributions! To get started:
 
-**Fork the repository.**
+*Fork the repository*
 - Create a new branch for your feature or bug fix.
 - Submit a pull request for review.
 For major changes, please open an issue to discuss your ideas first.
