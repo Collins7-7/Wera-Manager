@@ -54,7 +54,7 @@ Build and run the Spring Boot application:
   ```bash
    mvn clean install
    mvn spring-boot:run
-
+   ```
 3. **Front-end Setup**
 
 Navigate to the frontend directory.
@@ -62,6 +62,40 @@ Install dependencies and start the React development server:
 ```bash 
   npm install
   npm start
+  ```
 Access the Application
 
 Open a browser and go to http://localhost:3000.
+
+Usage
+Registering and Logging In
+1. Register with an email, username, and password.
+2. Upon registration, you will be automatically logged into the platform.
+
+Creating Projects
+
+1. Click on Create Project to start a new project.
+2. Use the Search Bar to quickly locate a specific project among the ones you've created.
+
+Inviting Collaborators
+
+1. Open a specific project, then use the Email Invitation feature to invite other developers to collaborate.
+2. Invited developers can join the project upon accepting the invitation.
+
+Managing Tasks
+1. Inside the project page, create tasks and assign them to team members.
+2. Update the task status as work progresses, and leave comments on tasks as needed.
+Real-Time Communication
+Use the Chatbox within each project for real-time communication with team members.
+Collaborators can also leave Comments on specific tasks for detailed discussions.
+
+**Contributing**
+We welcome contributions! To get started:
+
+**Fork the repository.**
+Create a new branch for your feature or bug fix.
+Submit a pull request for review.
+For major changes, please open an issue to discuss your ideas first.
+
+**License**
+This project is licensed under the MIT License - see the LICENSE file for details.
