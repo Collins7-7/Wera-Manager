@@ -51,16 +51,17 @@ Wera-Manager is a project management web application designed specifically for s
 Navigate to the backend directory.
 Configure your MySQL database settings in application.properties.
 Build and run the Spring Boot application:
-  
-mvn clean install
-mvn spring-boot:run
+  ```bash
+   mvn clean install
+   mvn spring-boot:run
 
 3. **Front-end Setup**
 
 Navigate to the frontend directory.
 Install dependencies and start the React development server:
-npm install
-npm start
+```bash 
+  npm install
+  npm start
 Access the Application
 
 Open a browser and go to http://localhost:3000.
